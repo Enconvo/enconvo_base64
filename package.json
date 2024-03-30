@@ -1,0 +1,44 @@
+{
+  "$schema": "https://enconvo.com/schemas/extension.json",
+  "name": "base64",
+  "version": "0.0.5",
+  "description": "Encode text / files to base64.",
+  "title": "Base64",
+  "icon": "icon.png",
+  "author": "ysnows",
+  "categories": [
+    "Util"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "commands": [
+    {
+      "name": "encode_to_base64",
+      "icon": "icon.png",
+      "title": "Encode To Base64",
+      "description": "Encode text / files to base64.",
+      "mode": "no-view",
+      "preferences": []
+    }
+  ],
+  "dependencies": {
+    "@enconvo/api": "/Users/ysnows/Documents/Project/enconvo.nodejs/enconvo_api"
+  },
+  "devDependencies": {
+    "@types/node": "^18.17.14",
+    "@types/react": "18.2.27",
+    "eslint": "^8.33.0",
+    "prettier": "^2.8.3",
+    "tsup": "^7.2.0",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "lint:fix": "npm run lint --fix",
+    "format": "prettier --write \"**/*.ts\"",
+    "format:check": "prettier --list-different \"**/*.ts\"",
+    "build": "enconvo",
+    "dev": "enconvo --dev",
+    "publish": "enconvo --publish"
+  }
+}
