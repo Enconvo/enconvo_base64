@@ -50,7 +50,7 @@ export default async function main(req: Request) {
         ]
 
         const output = {
-            content: result.slice(0, 200),
+            content: result.slice(0, 1000) + "...",
             actions: actions
         }
 
