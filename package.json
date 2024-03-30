@@ -1,7 +1,7 @@
 {
   "$schema": "https://enconvo.com/schemas/extension.json",
   "name": "base64",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Encode text / files to base64.",
   "title": "Base64",
   "icon": "icon.png",
@@ -22,7 +22,7 @@
     }
   ],
   "dependencies": {
-    "@enconvo/api": "/Users/ysnows/Documents/Project/enconvo.nodejs/enconvo_api"
+    "@enconvo/api": "^0.0.7"
   },
   "devDependencies": {
     "@types/node": "^18.17.14",
